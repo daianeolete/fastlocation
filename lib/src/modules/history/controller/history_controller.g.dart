@@ -1,0 +1,67 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'history_controller.dart';
+
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$HistoryController on _HistoryController, Store {
+  late final _$carregandoAtom =
+      Atom(name: '_HistoryController.carregando', context: context);
+
+  @override
+  bool get carregando {
+    _$carregandoAtom.reportRead();
+    return super.carregando;
+  }
+
+  @override
+  set carregando(bool value) {
+    _$carregandoAtom.reportWrite(value, super.carregando, () {
+      super.carregando = value;
+    });
+  }
+
+  late final _$historicoAtom =
+      Atom(name: '_HistoryController.historico', context: context);
+
+  @override
+  List<EnderecoModel> get historico {
+    _$historicoAtom.reportRead();
+    return super.historico;
+  }
+
+  @override
+  set historico(List<EnderecoModel> value) {
+    _$historicoAtom.reportWrite(value, super.historico, () {
+      super.historico = value;
+    });
+  }
+
+  late final _$carregarHistoricoAsyncAction =
+      AsyncAction('_HistoryController.carregarHistorico', context: context);
+
+  @override
+  Future<void> carregarHistorico() {
+    return _$carregarHistoricoAsyncAction.run(() => super.carregarHistorico());
+  }
+
+  late final _$limparHistoricoAsyncAction =
+      AsyncAction('_HistoryController.limparHistorico', context: context);
+
+  @override
+  Future<void> limparHistorico() {
+    return _$limparHistoricoAsyncAction.run(() => super.limparHistorico());
+  }
+
+  @override
+  String toString() {
+    return '''
+carregando: ${carregando},
+historico: ${historico}
+    ''';
+  }
+}
